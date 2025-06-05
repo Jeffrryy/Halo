@@ -1,6 +1,6 @@
 let i = 0;
 let text1 = "";
-let text2 = "Every single second with you is beautiful"
+let text2 = "Every single second, with you, are my favorite"
 let speed = 100;
 
 function typeWriter(text, para){
