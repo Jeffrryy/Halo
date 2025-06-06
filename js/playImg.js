@@ -26,7 +26,7 @@ function play(){
 	document.getElementById("imgTxt").style.opacity = 1 - flag;
 	if(t == 0){
 		//setTimeout(showImage, 1000);
-		setInterval(showImage, 500);
+		setInterval(showImage, 700);
 	}
 	t++;
 }
@@ -43,7 +43,7 @@ function preshowImage(){
 
 function buttonFadeIn(){
 	if(btnVal < 1){
-		btnVal += 0.025;
+		btnVal += 0.300;
 		btn.style.opacity = btnVal;
 	}
 	else{
@@ -62,14 +62,14 @@ function event(){
 
 	imgInterval = setInterval(function (){
 		if(ok == 3){
-			setTimeout(function(){buttonInterval = setInterval(buttonFadeIn, 50);}, 1500);
+			setTimeout(function(){buttonInterval = setInterval(buttonFadeIn, 50);}, 200);
 			clearInterval(imgInterval);
 		}
 	}, 50);
 }
 
+event();	
 var showImageInterval;
 var imgInterval;
 var buttonInterval;
 
-event();
