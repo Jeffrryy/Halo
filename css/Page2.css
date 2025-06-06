@@ -79,3 +79,9 @@ canvas{
     text-decoration: none;
     color: white;
 }
+
+@media (max-width: 600px){
+    .cardContainer{
+        display: block;
+    }
+}
